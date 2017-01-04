@@ -24,6 +24,21 @@ html, body, .content {
     padding: 0;
 }
 
+.content > header {
+    text-align: right;
+    padding: 1em 2em;
+}
+
+.content > header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+}
+
+.content > header a:hover {
+    text-decoration: underline;
+}
+
 .headline {
     font-family: 'PoliticsHeadBold', 'DejaWeb', 'Helvetica Neue', 'Arial', Sans-Serif;
 }
@@ -32,6 +47,11 @@ html, body, .content {
     display: none;
     position: relative;
     top: 50%;
+    transform: translateY(-50%);
+}
+
+.question.show {
+    display: block;
     transform: translateY(-50%);
 }
 
@@ -58,6 +78,7 @@ button {
     font-size: 25px;
     margin: 0 30px;
     transition: transform 0.1s;
+    z-index: 20;
 }
 
 button:hover {

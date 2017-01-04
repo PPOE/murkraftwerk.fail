@@ -13,11 +13,10 @@
       $(this).css('transform', 'translateX(-50%) rotate(' + ((Math.random() * 5) - 4) + 'deg)');
     });
 
-
-
-
-    var $randomQ = $questions.eq(Math.round(Math.random() * $questions.length) - 1);
-    $randomQ.show();
+    $questions.removeClass('show');
+    var randomNumber = Math.round(Math.random() * $questions.length) - 1;
+    var $randomQ = $questions.eq(randomNumber);
+    $randomQ.addClass('show');
 
     $('button.positive', $questions).on('click', function (event) {
       if ($('article.positive', $questions).hasClass('show')) {
@@ -52,6 +51,21 @@
       if (event.keyCode === 27) { // esc
         $('article', $questions).removeClass('show');
       }
+    });
+
+    $('.nextQuestion').on('click', function(event) {
+      event.preventDefault();
+      $('.question article').removeClass('show');
+      $questions.removeClass('show');
+
+      var oldRandomNumber = randomNumber;
+      do {
+        randomNumber = Math.round(Math.random() * $questions.length) - 1;
+        //console.log('round: ' + oldRandomNumber + ' - ' + randomNumber);
+      } while (oldRandomNumber === randomNumber);
+
+      $randomQ = $questions.eq(randomNumber);
+      $randomQ.addClass('show');
     });
 
 
