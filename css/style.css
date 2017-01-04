@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'PoliticsHeadBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('☺'), local('PoliticsHeadBold'), url('../font/PoliticsHeadBold.woff') format('woff');
+}
+
+html, body, .content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    background-color: #523671;
+    background: radial-gradient(#65497f 0%, #472b69 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    font-family: 'PoliticsHeadBold', 'DejaWeb', 'Helvetica Neue', 'Arial', Sans-Serif;
+    text-align: center;
+    padding: 0;
+}
+
+.headline {
+    font-family: 'PoliticsHeadBold', 'DejaWeb', 'Helvetica Neue', 'Arial', Sans-Serif;
+}
+
+.question {
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.question > .headline {
+    color: #000000;
+    border: 6px solid #ffffff;
+    background: linear-gradient(to top,  #ffcc04 0%, #f39200 100%);
+    display: inline-block;
+    padding: 3px 12px;
+    line-height: 53px;
+    margin-bottom: -6px;
+    transform: rotate(-1deg);
+}
+
+.question > footer {
+    margin-top: 60px;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(to top,  #ffcc04 0%, #f39200 100%);
+    border: none;
+    padding: 5px 15px;
+    font-size: 25px;
+    margin: 0 30px;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    transform: rotate(-2deg) scale(1.1);
+}
+
+button.positive {
+    border: 6px solid green;
+    color: #000000;
+    background: #ffffff;
+}
+
+button.negative {
+    border: 6px solid red;
+    color: #ffffff;
+    background: #000000;
+}
+
+.question article {
+    font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
+    position: absolute;
+    top: -300%;
+    left: 50%;
+    /*display: none;*/
+    color: #000000;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+    border: 6px solid #000000;
+    padding: 3px 12px;
+    transform: translateX(-50%) rotate(1deg);
+    transition: top 0.4s;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 992px) {
+    html {
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        background-color: #523671;
+        background: radial-gradient(#65497f 0%, #472b69 100%);
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .question {
+        transform: rotate(1deg);
+    }
+
+    .question article {
+        width: 90%;
+        transform: rotate(1deg);
+    }
+}
+
+.question article.show {
+    top: 0;
+}
+
+.question article .headline {
+    display: inline-block;
+    color: #65497f;
+    margin-right: 20px;
+}
+
+.question article .close {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 10px;
+}
+
+.question article footer {
+    text-align: right;
+}
+
+.content > footer {
+    font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
+    color: #666666;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.content > footer a {
+    color: #666666;
+}
