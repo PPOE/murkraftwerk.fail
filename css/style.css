@@ -52,7 +52,6 @@ html, body, .content {
 
 .question.show {
     display: block;
-    transform: translateY(-50%);
 }
 
 .question > .headline {
