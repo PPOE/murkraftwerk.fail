@@ -170,7 +170,6 @@ button.negative {
 .content > footer {
     font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
     color: #666666;
-    text-align: right;
     position: fixed;
     bottom: 0;
     width: 100%;
