@@ -113,38 +113,6 @@ button.negative {
     transition: top 0.4s;
 }
 
-/* Small devices (landscape phones, 544px and up) */
-@media (max-width: 992px) {
-    html {
-        min-height: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: auto;
-        height: auto;
-    }
-
-    body {
-        background-color: #523671;
-        background: radial-gradient(#65497f 0%, #472b69 100%);
-        background-repeat: no-repeat;
-        padding-bottom: 100px;
-        min-height: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: auto;
-        height: auto;
-    }
-
-    .question {
-        transform: rotate(1deg);
-    }
-
-    .question article {
-        width: 90%;
-        transform: rotate(1deg);
-    }
-}
-
 .question article.show {
     top: 0;
 }
@@ -207,4 +175,45 @@ button.negative {
 
 .share-btn.google-plus {
     background: #dd4b39;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 992px) {
+    html {
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        background-color: #523671;
+        background: radial-gradient(#65497f 0%, #472b69 100%);
+        background-repeat: no-repeat;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .question {
+        position: relative;
+        transform: rotate(1deg);
+    }
+
+    .question article {
+        width: 90%;
+        transform: rotate(1deg);
+    }
+
+    .content > footer {
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .content > footer div {
+        text-align: center !important;
+    }
 }
