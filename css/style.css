@@ -117,6 +117,10 @@ button.negative {
     top: 0;
 }
 
+.question article p {
+    margin: 1em;
+}
+
 .question article .headline {
     display: inline-block;
     color: #65497f;
