@@ -99,7 +99,7 @@ button.negative {
 .question article {
     font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
     position: absolute;
-    top: -300%;
+    top: -500%;
     left: 50%;
     /*display: none;*/
     color: #000000;
