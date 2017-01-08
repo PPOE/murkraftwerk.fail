@@ -2,7 +2,7 @@
     font-family: 'PoliticsHeadBold';
     font-style: normal;
     font-weight: normal;
-    src: local('☺'), local('PoliticsHeadBold'), url('../font/PoliticsHeadBold.woff') format('woff');
+    src: local('☺'), local('PoliticsHeadBold'), url('../fonts/PoliticsHeadBold.woff') format('woff');
 }
 
 html, body, .content {
@@ -178,4 +178,33 @@ button.negative {
 
 .content > footer a {
     color: #666666;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff !important;
+    border: none;
+    padding: 0.2em;
+    width: 2em;
+    outline: none;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.share-btn:hover {
+    position: relative;
+    top: 2px;
+    color: #eeeeee;
+}
+
+.share-btn.facebook {
+    background: #3B5998;
+}
+
+.share-btn.twitter {
+    background: #55acee;
+}
+
+.share-btn.google-plus {
+    background: #dd4b39;
 }
