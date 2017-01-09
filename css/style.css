@@ -5,6 +5,10 @@
     src: local('☺'), local('PoliticsHeadBold'), url('../fonts/PoliticsHeadBold.woff') format('woff');
 }
 
+a {
+    font-weight: bold;
+}
+
 html, body, .content {
     width: 100%;
     height: 100%;
