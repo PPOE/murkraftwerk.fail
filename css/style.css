@@ -152,6 +152,10 @@ button.negative {
     padding: 0 10px;
 }
 
+.nextQuestion {
+    font-size: 1.8em;
+}
+
 .content > footer a {
     color: #666666;
 }
