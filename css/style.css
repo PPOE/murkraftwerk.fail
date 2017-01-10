@@ -52,6 +52,7 @@ html, body, .content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 40;
 }
 
 .question.show {
@@ -187,6 +188,11 @@ button.negative {
 
 .share-btn.google-plus {
     background: #dd4b39;
+}
+
+.ztop {
+    position: relative;
+    z-index: 30;
 }
 
 /* Small devices (landscape phones, 544px and up) */
