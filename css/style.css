@@ -229,3 +229,17 @@ button.negative {
         text-align: center !important;
     }
 }
+
+@media (max-width: 768px) {
+    .question > .headline {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .question > .headline {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+}
