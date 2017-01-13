@@ -3,6 +3,10 @@
 
   $(function () {
 
+    if (navigator.userAgent.match(/iPhone|Android/i)) {
+      $('.share-btn.whatsapp').show();
+    }
+
     var $questions = $('.content .question');
 
 
