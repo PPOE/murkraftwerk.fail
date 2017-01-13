@@ -4,7 +4,7 @@
   $(function () {
 
     if (navigator.userAgent.match(/iPhone|Android/i)) {
-      $('.share-btn.whatsapp').show();
+      $('.share-btn.whatsapp,.share-btn.facebook-messenger').css('display', 'inline-block');
     }
 
     var $questions = $('.content .question');

@@ -190,9 +190,18 @@ button.negative {
     background: #dd4b39;
 }
 
+.share-btn.facebook-messenger {
+    display: none;
+    background: #0084ff;
+}
+
 .share-btn.whatsapp {
     display: none;
     background: #25d366;
+}
+
+.share-btn.telegram {
+    background: #0088cc;
 }
 
 .ztop {
