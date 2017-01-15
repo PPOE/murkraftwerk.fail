@@ -232,6 +232,7 @@ button.negative {
 
     .question {
         position: relative;
+        margin-top: 150px;
         transform: rotate(1deg);
     }
 
