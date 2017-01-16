@@ -244,6 +244,7 @@ button.negative {
     .content > footer {
         margin-top: 40px;
         position: relative;
+        margin-bottom: 300px;
     }
 
     .content > footer div {
